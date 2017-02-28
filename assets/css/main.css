@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -1633,7 +1633,7 @@
 
 	body, input, select, textarea {
 		color: #585858;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: "Oswald", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
 		line-height: 1.75;
@@ -2604,7 +2604,8 @@
 				position: relative;
 				display: block;
 				width: 100%;
-				border-radius: 4px;
+				border: 1px solid #585858;
+        border-radius: 0px;
 				overflow: hidden;
 			}
 
@@ -2650,7 +2651,7 @@
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+					/*background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");*/
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
@@ -2685,7 +2686,6 @@
 				width: 100%;
 				height: 100%;
 				padding: 1em;
-				border-radius: 4px;
 				border-bottom: 0;
 				color: #ffffff;
 				text-align: center;
@@ -2722,15 +2722,15 @@
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				/*background-color: #f2849e;*/
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				/*background-color: #7ecaf6;*/
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				/*background-color: #7bd0c1;*/
 			}
 
 			.tiles article.style4 > .image:before {
@@ -3184,8 +3184,8 @@
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		/*padding: 5em 0 6em 0 ;
+		background-color: #f6f6f6;*/
 	}
 
 		#footer > .inner {
@@ -3332,6 +3332,10 @@
 
 /* Wrapper */
 
+  .text-input {
+		margin-left: 50%;
+	}
+
 	#wrapper > * > .inner {
 		width: 100%;
 		max-width: 68em;
@@ -3346,3 +3350,55 @@
 			}
 
 		}
+
+    #contact {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .row > .input {
+      padding: 1%;
+    }
+
+    .panel > header {
+      width: 100%;
+      /*padding: 0 8.5%;*/
+    }
+
+    .input {
+      margin-right: 5%;
+      margin-bottom: 1em;
+      background-color: #f4f4f4;
+
+    }
+
+    .input > input[type="text"] {
+      border: none;
+    }
+
+    .input > * > textarea {
+      border: none;
+    }
+
+    .name-input {
+      width: 45%;
+    }
+
+    .email-input {
+      width: 45%;
+    }
+
+    .subject-input {
+      width: 95%;
+    }
+
+    .message-input {
+      width: 95%;
+    }
+    
+    .send-message {
+      padding: 0%;
+      background-color: transparent;
+      width: auto;
+    }
